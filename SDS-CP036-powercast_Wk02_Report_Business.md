@@ -1,7 +1,7 @@
-# SDS-CP036-powercast — Wk02 Consolidated Business Report (Inline Plots v2)
+# SDS-CP036-powercast — Wk02 Consolidated Business Report
 
 Generated on: 2025-08-17 07:18:44
-Project root: `/home/6376f5a9-d12b-4255-9426-c0091ad440a7/Powercast`
+Project root: `/Powercast`
 
 Includes Sections: 1, 2, 3, 4, 5
 
@@ -54,6 +54,7 @@ A: Lag/rolling features naturally create missing values at the start of the seri
 
 ![wk02_section2_rolling24_overlay.png](results/Wk02_Section2/plots/wk02_section2_rolling24_overlay.png)
 ![wk02_section2_baseline_mae.png](results/Wk02_Section2/plots/wk02_section2_baseline_mae.png)
+
 ## Section 3 — Feature Scaling & Normalization
 
 ### Key Questions Answered
@@ -67,7 +68,20 @@ Q: Did you notice any features that required special treatment during normalizat
 A: Yes. We intentionally left some features unscaled because they are binary flags (0/1) or already unitless cyclical encodings (sine/cosine in [-1,1]). Examples: cos_dow, cos_doy, cos_hour, is_weekend, sin_dow, sin_doy, sin_hour. For outlier‑prone metrics we prefer Robust scaling to avoid over‑weighting spikes.
 ![standard_Zone 1 Power Consumption_lag1_before.png](results/Wk02_Section3/plots/standard_Zone 1 Power Consumption_lag1_before.png)
 ![standard_Zone 1 Power Consumption_lag1_after.png](results/Wk02_Section3/plots/standard_Zone 1 Power Consumption_lag1_after.png)
-## Section 4 — (placeholder)
+
+## Section 4 — Data Splitting & Preparation
+
+### Key Questions Answered
+Q: How did you split your data into training and test sets to maintain chronological order?
+A: We respected the **natural flow of time** in the data. If training/testing files already existed from Section 3, we used them as-is. Otherwise, we split by time: the **first 80% (earlier dates)** for training and the **last 20% (later dates)** for testing, with **no shuffling**. This matches real-world usage, where yesterday teaches us to predict tomorrow.
+
+Q: What steps did you take to prevent information leakage between splits?
+A: We prevented **information leakage**—that’s when future knowledge accidentally sneaks into training—by ensuring any learned settings (such as scaling/normalization from earlier steps) were **fit on the training period only** and then **applied to the later test period**. When building targets and features, we also avoided using any future-looking information. This keeps evaluation realistic for live operations.
+
+Q: How did you verify that your train/test split was appropriate for time-series forecasting?
+A: We validated the split in two ways: (1) a **timeline visualization** with a clear marker where training ends and testing begins; and (2) **walk‑forward validation**, which repeatedly tests on successive future slices. Think of it as asking, *“If we stopped here, could we predict the next step?”* Consistent results across slices and a clean split line indicate the split is sound for forecasting.
+
+![Split marker](results/Wk02_Section4/plots/wk02_section4_split_marker.png)
 
 ## Section 5 — Data Quality & Preprocessing
 
@@ -89,16 +103,4 @@ A: We checked **pipeline stability** across different slices of the data. We com
 
 ![missing_before_train.png](results/Wk02_Section5/plots/missing_before_train.png)
 ![missing_after_train.png](results/Wk02_Section5/plots/missing_after_train.png)
-## Section 4 — Data Splitting & Preparation
 
-### Key Questions Answered
-Q: How did you split your data into training and test sets to maintain chronological order?
-A: We respected the **natural flow of time** in the data. If training/testing files already existed from Section 3, we used them as-is. Otherwise, we split by time: the **first 80% (earlier dates)** for training and the **last 20% (later dates)** for testing, with **no shuffling**. This matches real-world usage, where yesterday teaches us to predict tomorrow.
-
-Q: What steps did you take to prevent information leakage between splits?
-A: We prevented **information leakage**—that’s when future knowledge accidentally sneaks into training—by ensuring any learned settings (such as scaling/normalization from earlier steps) were **fit on the training period only** and then **applied to the later test period**. When building targets and features, we also avoided using any future-looking information. This keeps evaluation realistic for live operations.
-
-Q: How did you verify that your train/test split was appropriate for time-series forecasting?
-A: We validated the split in two ways: (1) a **timeline visualization** with a clear marker where training ends and testing begins; and (2) **walk‑forward validation**, which repeatedly tests on successive future slices. Think of it as asking, *“If we stopped here, could we predict the next step?”* Consistent results across slices and a clean split line indicate the split is sound for forecasting.
-
-![Split marker](results/Wk02_Section4/plots/wk02_section4_split_marker.png)
