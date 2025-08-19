@@ -1,18 +1,18 @@
 # SDS-CP036-powercast — Wk02 Consolidated Business Report
 
-Generated on: 2025-08-17 07:18:44
-Project root: `/Powercast`
-
-Includes Sections: 1, 2, 3, 4, 5
+Generated on: 2025-08-18 23:00:45
+Project Repository: `https://github.com/SuperDataScience-Community-Projects/SDS-CP036-powercast.git`
+Contributor Base Directory: `https://github.com/SuperDataScience-Community-Projects/SDS-CP036-powercast/tree/main/beginner/submissions/team-members/girish-kulkarni`
+Includes Week 2 Sections: 1, 2, 3, 4, 5
 
 ## Table of Contents
-- [Section 1 — Week 2 – Section 1: Time-Based Feature Engineering](#section-1)
-- [Section 2 — (placeholder)](#section-2)
-- [Section 3 — (placeholder)](#section-3)
-- [Section 4 — (placeholder)](#section-4)
-- [Section 5 — (placeholder)](#section-5)
+- [Section 1 — Time-Based Feature Engineering](#week-2--section-1-time-based-feature-engineering)
+- [Section 2 — Lag and Rolling Statistics](#week2-section-2--lag-and-rolling-statistics)
+- [Section 3 — Feature Scaling & Normalization](#week2-section-3--feature-scaling--normalization)
+- [Section 4 — Data Splitting & Preparation](#week2-section-4--data-splitting--preparation)
+- [Section 5 — Data Quality & Preprocessing](#week2-section-5--data-quality--preprocessing)
 
-## Section 1 — Week 2 – Section 1: Time-Based Feature Engineering
+## Week 2 – Section 1: Time-Based Feature Engineering
 
 ## Dataset
 Using file: **Tetuan City power consumption.csv**
@@ -34,7 +34,7 @@ A: We validated timestamps (including alternate date formats) and checked the ty
 ![wk02_section1_hourly_profile.png](results/Wk02_Section1/plots/wk02_section1_hourly_profile.png)
 ![wk02_section1_dayofweek_profile.png](results/Wk02_Section1/plots/wk02_section1_dayofweek_profile.png)
 
-## Section 2 — Lag and Rolling Statistics
+## Week2 Section 2 — Lag and Rolling Statistics
 
 _This run detected and merged **Section 1** time-based features automatically._
 
@@ -54,8 +54,7 @@ A: Lag/rolling features naturally create missing values at the start of the seri
 
 ![wk02_section2_rolling24_overlay.png](results/Wk02_Section2/plots/wk02_section2_rolling24_overlay.png)
 ![wk02_section2_baseline_mae.png](results/Wk02_Section2/plots/wk02_section2_baseline_mae.png)
-
-## Section 3 — Feature Scaling & Normalization
+## Week2 Section 3 — Feature Scaling & Normalization
 
 ### Key Questions Answered
 Q: Which normalization or scaling techniques did you apply to your numerical features, and why?
@@ -68,8 +67,7 @@ Q: Did you notice any features that required special treatment during normalizat
 A: Yes. We intentionally left some features unscaled because they are binary flags (0/1) or already unitless cyclical encodings (sine/cosine in [-1,1]). Examples: cos_dow, cos_doy, cos_hour, is_weekend, sin_dow, sin_doy, sin_hour. For outlier‑prone metrics we prefer Robust scaling to avoid over‑weighting spikes.
 ![standard_Zone 1 Power Consumption_lag1_before.png](results/Wk02_Section3/plots/standard_Zone 1 Power Consumption_lag1_before.png)
 ![standard_Zone 1 Power Consumption_lag1_after.png](results/Wk02_Section3/plots/standard_Zone 1 Power Consumption_lag1_after.png)
-
-## Section 4 — Data Splitting & Preparation
+## Week2 Section 4 — Data Splitting & Preparation
 
 ### Key Questions Answered
 Q: How did you split your data into training and test sets to maintain chronological order?
@@ -83,7 +81,7 @@ A: We validated the split in two ways: (1) a **timeline visualization** with a c
 
 ![Split marker](results/Wk02_Section4/plots/wk02_section4_split_marker.png)
 
-## Section 5 — Data Quality & Preprocessing
+## Week2 Section 5 — Data Quality & Preprocessing
 
 ### Key Questions Answered
 Q: What preprocessing steps did you apply to handle missing values or anomalies before modeling?
