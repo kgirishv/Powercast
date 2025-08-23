@@ -1,0 +1,49 @@
+Zone,Model,Hour,MeanResidual
+Zone 1 Power Consumption,SARIMAX,0,-4784.441245553408
+Zone 1 Power Consumption,SARIMAX,1,-8681.670604802372
+Zone 1 Power Consumption,SARIMAX,2,-10442.639628379073
+Zone 1 Power Consumption,SARIMAX,3,-11207.937717332947
+Zone 1 Power Consumption,SARIMAX,4,-10712.391085590663
+Zone 1 Power Consumption,SARIMAX,5,-9215.135954953923
+Zone 1 Power Consumption,SARIMAX,6,-7237.048318595626
+Zone 1 Power Consumption,SARIMAX,7,-12497.898927460586
+Zone 1 Power Consumption,SARIMAX,8,-17217.780583332773
+Zone 1 Power Consumption,SARIMAX,9,-14007.00291949602
+Zone 1 Power Consumption,SARIMAX,10,-10135.864484946418
+Zone 1 Power Consumption,SARIMAX,11,-5717.738064338853
+Zone 1 Power Consumption,SARIMAX,12,-1311.1623136398168
+Zone 1 Power Consumption,SARIMAX,13,2822.8027217990193
+Zone 1 Power Consumption,SARIMAX,14,5485.401704101135
+Zone 1 Power Consumption,SARIMAX,15,6709.212174563499
+Zone 1 Power Consumption,SARIMAX,16,7508.661958057685
+Zone 1 Power Consumption,SARIMAX,17,13465.967954425785
+Zone 1 Power Consumption,SARIMAX,18,16908.30614074926
+Zone 1 Power Consumption,SARIMAX,19,15368.737940946778
+Zone 1 Power Consumption,SARIMAX,20,16796.71280635648
+Zone 1 Power Consumption,SARIMAX,21,13916.291132148372
+Zone 1 Power Consumption,SARIMAX,22,8313.698952522393
+Zone 1 Power Consumption,SARIMAX,23,1116.6796254004616
+Zone 1 Power Consumption,XGBoost (lags),0,50.64849645833393
+Zone 1 Power Consumption,XGBoost (lags),1,-336.6731878571435
+Zone 1 Power Consumption,XGBoost (lags),2,-271.9395799404759
+Zone 1 Power Consumption,XGBoost (lags),3,-315.5766516666663
+Zone 1 Power Consumption,XGBoost (lags),4,-283.3071187500006
+Zone 1 Power Consumption,XGBoost (lags),5,99.760115625
+Zone 1 Power Consumption,XGBoost (lags),6,533.4327473809519
+Zone 1 Power Consumption,XGBoost (lags),7,-486.5753897619049
+Zone 1 Power Consumption,XGBoost (lags),8,-93.50752130952294
+Zone 1 Power Consumption,XGBoost (lags),9,174.5171904166673
+Zone 1 Power Consumption,XGBoost (lags),10,306.26239485119004
+Zone 1 Power Consumption,XGBoost (lags),11,338.10470363095374
+Zone 1 Power Consumption,XGBoost (lags),12,37.00387122023936
+Zone 1 Power Consumption,XGBoost (lags),13,-180.00853785714258
+Zone 1 Power Consumption,XGBoost (lags),14,74.08205398809461
+Zone 1 Power Consumption,XGBoost (lags),15,-237.30861000000004
+Zone 1 Power Consumption,XGBoost (lags),16,-477.70069601190545
+Zone 1 Power Consumption,XGBoost (lags),17,208.7746355357137
+Zone 1 Power Consumption,XGBoost (lags),18,-202.15242898809706
+Zone 1 Power Consumption,XGBoost (lags),19,-558.5830089285727
+Zone 1 Power Consumption,XGBoost (lags),20,58.449368988095166
+Zone 1 Power Consumption,XGBoost (lags),21,-46.47576119047777
+Zone 1 Power Consumption,XGBoost (lags),22,449.7454004166679
+Zone 1 Power Consumption,XGBoost (lags),23,-208.8442094642856
