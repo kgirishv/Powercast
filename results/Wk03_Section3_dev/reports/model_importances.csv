@@ -1,0 +1,29 @@
+Zone,Model,Term,Importance
+Zone 1 Power Consumption,SARIMAX,ar.L1,-0.17030398153095533
+Zone 1 Power Consumption,SARIMAX,ma.L1,0.3534831334778298
+Zone 1 Power Consumption,SARIMAX,ma.S.L24,-0.6505641427007284
+Zone 1 Power Consumption,SARIMAX,sigma2,535640.9521227009
+Zone 1 Power Consumption,XGBoost (lags),lag_1,0.11717946082353592
+Zone 1 Power Consumption,XGBoost (lags),lag_2,0.003505158005282283
+Zone 1 Power Consumption,XGBoost (lags),lag_3,0.00804026797413826
+Zone 1 Power Consumption,XGBoost (lags),lag_4,0.0048006875440478325
+Zone 1 Power Consumption,XGBoost (lags),lag_5,0.006350923329591751
+Zone 1 Power Consumption,XGBoost (lags),lag_6,0.008443026803433895
+Zone 1 Power Consumption,XGBoost (lags),lag_7,0.011155284941196442
+Zone 1 Power Consumption,XGBoost (lags),lag_8,0.004350326023995876
+Zone 1 Power Consumption,XGBoost (lags),lag_9,0.004706686828285456
+Zone 1 Power Consumption,XGBoost (lags),lag_10,0.010019448585808277
+Zone 1 Power Consumption,XGBoost (lags),lag_11,0.00726675009354949
+Zone 1 Power Consumption,XGBoost (lags),lag_12,0.004066938534379005
+Zone 1 Power Consumption,XGBoost (lags),lag_13,0.004608339164406061
+Zone 1 Power Consumption,XGBoost (lags),lag_14,0.006982873193919659
+Zone 1 Power Consumption,XGBoost (lags),lag_15,0.005013077054172754
+Zone 1 Power Consumption,XGBoost (lags),lag_16,0.006141241639852524
+Zone 1 Power Consumption,XGBoost (lags),lag_17,0.0053521390073001385
+Zone 1 Power Consumption,XGBoost (lags),lag_18,0.005798244383186102
+Zone 1 Power Consumption,XGBoost (lags),lag_19,0.004044688772410154
+Zone 1 Power Consumption,XGBoost (lags),lag_20,0.00886463187634945
+Zone 1 Power Consumption,XGBoost (lags),lag_21,0.005941241513937712
+Zone 1 Power Consumption,XGBoost (lags),lag_22,0.00277306092903018
+Zone 1 Power Consumption,XGBoost (lags),lag_23,0.07009446620941162
+Zone 1 Power Consumption,XGBoost (lags),lag_24,0.684501051902771
