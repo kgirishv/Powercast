@@ -1,0 +1,5 @@
+model,params,rmse,mae,mape,zone
+SARIMAX,"(p,d,q)=(1,0,1),(P,D,Q,s)=(0,1,1,24)",,,,Zone 1 Power Consumption
+SARIMAX,"(p,d,q)=(1,1,1),(P,D,Q,s)=(0,1,1,24)",,,,Zone 1 Power Consumption
+XGB,"{""n_estimators"": 150, ""max_depth"": 3, ""learning_rate"": 0.1}",8110.228076475289,6889.060427290506,27.722557592608428,Zone 1 Power Consumption
+XGB,"{""n_estimators"": 250, ""max_depth"": 4, ""learning_rate"": 0.1}",8652.842615661719,7360.755432194632,29.717417271473835,Zone 1 Power Consumption
