@@ -1,0 +1,3 @@
+zone,model,rmse,mae,mape,profile
+Zone 1 Power Consumption,Baseline (Naïve),6357.359740150888,5470.414629593254,19.382757044251886,dev
+Zone 1 Power Consumption,SARIMAX@hourly,29935.301644098156,29251.02382074716,99.82298933501944,dev
